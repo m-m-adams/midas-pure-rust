@@ -1,0 +1,80 @@
+{
+    "Event": {
+        "#attributes": {
+            "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+        },
+        "EventData": {
+            "AuthenticationPackageName": "Kerberos",
+            "ElevatedToken": "%%1842",
+            "ImpersonationLevel": "%%1833",
+            "IpAddress": "10.13.37.3",
+            "IpPort": "16293",
+            "KeyLength": "0",
+            "LmPackageName": "-",
+            "LogonGuid": "{1B4998FC-F129-B29F-9315-016270E32CB3}",
+            "LogonProcessName": "Kerberos",
+            "LogonType": "3",
+            "ProcessId": "0x0",
+            "ProcessName": "-",
+            "RestrictedAdminMode": "-",
+            "SubjectDomainName": "-",
+            "SubjectLogonId": "0x0",
+            "SubjectUserName": "-",
+            "SubjectUserSid": "S-1-0-0",
+            "TargetDomainName": "FAKE.CA",
+            "TargetLinkedLogonId": "0x0",
+            "TargetLogonId": "0x6c09983",
+            "TargetOutboundDomainName": "-",
+            "TargetOutboundUserName": "-",
+            "TargetUserName": "EX1$",
+            "TargetUserSid": "S-1-5-21-3483157812-847938184-2591499129-1103",
+            "TransmittedServices": "-",
+            "VirtualAccount": "%%1843",
+            "WorkstationName": "-"
+        },
+        "RenderingInfo": {
+            "#attributes": {
+                "Culture": "en-US"
+            },
+            "Channel": "Security",
+            "Keywords": {
+                "Keyword": "Audit Success"
+            },
+            "Level": "Information",
+            "Message": "An account was successfully logged on.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-0-0\r\n\tAccount Name:\t\t-\r\n\tAccount Domain:\t\t-\r\n\tLogon ID:\t\t0x0\r\n\r\nLogon Information:\r\n\tLogon Type:\t\t3\r\n\tRestricted Admin Mode:\t-\r\n\tVirtual Account:\t\tNo\r\n\tElevated Token:\t\tYes\r\n\r\nImpersonation Level:\t\tImpersonation\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\tS-1-5-21-3483157812-847938184-2591499129-1103\r\n\tAccount Name:\t\tEX1$\r\n\tAccount Domain:\t\tFAKE.CA\r\n\tLogon ID:\t\t0x6C09983\r\n\tLinked Logon ID:\t\t0x0\r\n\tNetwork Account Name:\t-\r\n\tNetwork Account Domain:\t-\r\n\tLogon GUID:\t\t{1B4998FC-F129-B29F-9315-016270E32CB3}\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x0\r\n\tProcess Name:\t\t-\r\n\r\nNetwork Information:\r\n\tWorkstation Name:\t-\r\n\tSource Network Address:\t10.13.37.3\r\n\tSource Port:\t\t16293\r\n\r\nDetailed Authentication Information:\r\n\tLogon Process:\t\tKerberos\r\n\tAuthentication Package:\tKerberos\r\n\tTransited Services:\t-\r\n\tPackage Name (NTLM only):\t-\r\n\tKey Length:\t\t0\r\n\r\nThis event is generated when a logon session is created. It is generated on the computer that was accessed.\r\n\r\nThe subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.\r\n\r\nThe logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).\r\n\r\nThe New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.\r\n\r\nThe network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.\r\n\r\nThe impersonation level field indicates the extent to which a process in the logon session can impersonate.\r\n\r\nThe authentication information fields provide detailed information about this specific logon request.\r\n\t- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.\r\n\t- Transited services indicate which intermediate services have participated in this logon request.\r\n\t- Package name indicates which sub-protocol was used among the NTLM protocols.\r\n\t- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",
+            "Opcode": "Info",
+            "Provider": "Microsoft Windows security auditing.",
+            "Task": "Logon"
+        },
+        "System": {
+            "Channel": "Security",
+            "Computer": "DC1.fake.ca",
+            "Correlation": null,
+            "EventID": "4624",
+            "EventRecordID": "3472852",
+            "Execution": {
+                "#attributes": {
+                    "ProcessID": "616",
+                    "ThreadID": "2284"
+                }
+            },
+            "Keywords": "0x8020000000000000",
+            "Level": "0",
+            "Opcode": "0",
+            "Provider": {
+                "#attributes": {
+                    "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+                    "Name": "Microsoft-Windows-Security-Auditing"
+                }
+            },
+            "Security": null,
+            "Task": "12544",
+            "TimeCreated": {
+                "#attributes": {
+                    "SystemTime": "2019-06-04T14:29:02.332469500Z"
+                }
+            },
+            "Version": "2"
+        }
+    }
+}

@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 cms = {git = "https://github.com/m-m-adams/count-min-sketch.git"}
+evtx = "0.7.2"
+chrono = "0.4"
+serde_json = "1.0.64"
